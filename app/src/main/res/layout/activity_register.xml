@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#313131"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="REGISTRATION"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editTextF_NIM"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/editTextF_Name"
+        android:layout_alignParentStart="true"
+        android:background="#fbfefd"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Your NIM"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextF_Name"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/editTextEmail"
+        android:layout_alignParentStart="true"
+        android:background="#fbfefd"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Your Full Name"/>
+
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/editTextPassword"
+        android:layout_alignParentStart="true"
+        android:background="#fbfefd"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Your Email"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btn_Register"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp"
+        android:background="#fbfefd"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_Register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Login"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="41dp"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="67dp"
+        android:text="Already Register ? Log In Here" />
+
+</RelativeLayout>
